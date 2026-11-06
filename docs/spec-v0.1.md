@@ -1,3 +1,6 @@
+# Спецификация v0.1
+##
+
 **Well-known endpoint** (`GET /.well-known/mc-federation`):
 ```json
 {
@@ -34,3 +37,12 @@
 SPORELINK-MANIFEST-V1\n<canonical_json>
 ```
 Подпись — Ed25519, 64 байта, base64.
+
+## Canonicalization
+
+Подписывается JSON в канонической форме: рекурсивная сортировка ключей
+по code points, минимум экранирования, без пробелов.
+
+Префикс подписи: `SPORELINK-MANIFEST-V1\n`.
+
+Реализации обязаны проходить общий test-vector из `test-vectors/`.

@@ -1,0 +1,13 @@
+{
+  "input": {
+    "manifest_version": "0.1",
+    "federation_id": "sporelink",
+    "issued_at": "2026-11-06T12:00:00Z",
+    "members": [
+      { "server_id": "hub-0001", "endpoint": "http://localhost:5000",
+        "public_key": "ed25519:AAAA" }
+    ],
+    "rules": { "min_reputation_to_join": 0, "season_duration_days": 45 }
+  },
+  "canonical": "{\"federation_id\":\"sporelink\",\"issued_at\":\"2026-11-06T12:00:00Z\",\"manifest_version\":\"0.1\",\"members\":[{\"endpoint\":\"http://localhost:5000\",\"public_key\":\"ed25519:AAAA\",\"server_id\":\"hub-0001\"}],\"rules\":{\"min_reputation_to_join\":0,\"season_duration_days\":45}}"
+}
